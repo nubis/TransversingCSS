@@ -1,0 +1,32 @@
+name:               TransversingCSS
+version:            0.1
+copyright:          (C) 2011 Nubis <nubis@woobiz.com.ar>
+license:            BSD3
+license-file:       LICENSE
+author:             Nubis <nubis@woobiz.com.ar>
+maintainer:         Nubis <nubis@woobiz.com.ar>
+homepage:           http://mononoproject.com
+category:           HTML, CSS, Parsing
+synopsis:           Extract parts of an HTML file using CSS selectors
+description:        
+                    Extracts all elements of a given HTML document matching the provided CSS query.
+                    Provides one main function that takes the query and document, returning a list of fragments.
+
+stability:          experimental
+cabal-version:      >= 1.8
+build-type:         Simple
+tested-with:        GHC==7.0.3
+extra-source-files: README.md, LICENSE, tests/test.hs, tests/test.html
+
+library
+  exposed-modules: Text.XML.HXT.TransversingCSS
+
+  build-depends: hxt >= 9.1.5
+               , parsec >= 3.1.1
+               , base
+               , containers
+
+source-repository head
+  type: git
+  location: git://github.com/nubis/TransversingCSS.git
+
