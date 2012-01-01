@@ -5,12 +5,19 @@ you get back a list of fragments of the html that match that query.
 Only a subset of the spec is supported, full CSS3 support is planned.
 
 For now you can select:
+
  * By tag name: /table td a/
+
  * By class names: /.container .content/
+
  * By Id: /#oneId/
+ 
  * By attribute: /[hasIt]/, /[exact=match]/, /[contains*=text]/, /[starts^=with]/, /[ends$=with]/
+
  * Union: /a, span, p/
+
  * Immediate children: /div > p/ 
+
  * Get jiggy with it: /div[data-attr=yeah] > .mon, .foo.bar div, #oneThing/
 
 This module was initially thought as part of my web application testing library,
@@ -57,5 +64,7 @@ main = do
 
 And your result would be:
 
+```haskell
 ["<a class=\"foo big\">one</a>", "<a class=\"big bar\">Second</a>", "<h1>Hello</h1>"]
+```
 
