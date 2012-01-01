@@ -6,19 +6,13 @@ Only a subset of the spec is supported, full CSS3 support is planned.
 
 For now you can select:
 
- * By tag name: /table td a/
-
- * By class names: /.container .content/
-
- * By Id: /#oneId/
- 
- * By attribute: /[hasIt]/, /[exact=match]/, /[contains*=text]/, /[starts^=with]/, /[ends$=with]/
-
- * Union: /a, span, p/
-
- * Immediate children: /div > p/ 
-
- * Get jiggy with it: /div[data-attr=yeah] > .mon, .foo.bar div, #oneThing/
+ * By tag name: table td a
+ * By class names: .container .content
+ * By Id: #oneId
+ * By attribute: [hasIt] [exact=match] [contains*=text] [starts^=with] [ends$=with]
+ * Union: a, span, p
+ * Immediate children: div > p
+ * Get jiggy with it: div[data-attr=yeah] > .mon, .foo.bar div, #oneThing
 
 This module was initially thought as part of my web application testing library,
 but it may be useful for people doing web scraping too.
